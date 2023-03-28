@@ -23,16 +23,83 @@
         </nav>
     </header>
   
-    <main class="container">
+    <main class="container shop">
         <section class="buscador">
-            <form action="">
-                <label for=""></label>
-                <input type="text">
-            </form>
+            <form action="" method="post">
+                <label for="item" class="titulo-buscador">BUSCAR</label>
+                <input type="text" name="item" id="item" placeholder="item o categoría">
+
+                <label for="orden" class="titulo-buscador">ORDENAR POR</label>
+                <select name="orden" id="orden">
+                    <option value="vacio"></option>
+                    <option value="mayor-menor">Mayor a menor</option>
+                    <option value="menor-mayor">Menor a mayor</option>
+                    <option value="mas-vendidos">Mas vendidos</option>
+                </select>
+                
+                <label for="precio" class="titulo-buscador">PRECIO</label>
+                <p class="min-max">MIN <input type="text" name="precio-min" id="precio" class="min-max-input" placeholder="0"> - MAX <input type="text" name="precio-max" id="precio" class="min-max-input" placeholder="0"></p>
+
+                <p class="titulo-buscador">FILTRAR</p>
+                <div class="filtros">
+                    <div>
+                        <input type="checkbox" name="nuevos" id="nuevos">
+                        <label for="nuevos">NUEVOS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="oferta" id="oferta">
+                        <label for="oferta">OFERTA</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="edicion-especial" id="edicion-especial">
+                        <label for="edicion-especial">EDICIÓN ESPECIAL</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favoritos" id="favoritos">
+                        <label for="favoritos">FAVORITOS</label>
+                    </div>
+                    
+                    
+                </div>
+            </form>            
         </section>
 
-        <section class="galeria-productos">
+        <section class="contenedor-productos">
+            <div class="producto producto-shop">
+                <div>
+                    <span>NUEVO</span>
+                    <img src="multimedia/star-wars/trooper-1.webp" alt="funko pop de star wars trooper">
+                </div>
+                
+                <p class="last-categoria">CATEGORIA</p>
+                <p class="last-producto">NOMBRE DEL PRODUCTO</p>
+                <p class="last-precio">$000,00.-</p>
+                <p class="tres-cuotas">3 CUOTAS SIN INTERÉS</p>
+            </div>    
 
+            <div class="producto producto-shop">
+                <div>
+                    <span>NUEVO</span>
+                    <img src="multimedia/pokemon/pidgeotto-1.webp" alt="funko pop de pokemon pidgeotto">
+                </div>
+                
+                <p class="last-categoria">CATEGORIA</p>
+                <p class="last-producto">NOMBRE DEL PRODUCTO</p>
+                <p class="last-precio">$000,00.-</p>
+                <p class="tres-cuotas">3 CUOTAS SIN INTERES</p>
+            </div>  
+
+            <div class="producto producto-shop">
+                <div>
+                    <span>NUEVO</span>
+                    <img src="multimedia/harry-potter/luna-1.webp" alt="funko pop de harry potter luna lovegood">
+                </div>
+                
+                <p class="last-categoria">CATEGORIA</p>
+                <p class="last-producto">NOMBRE DEL PRODUCTO</p>
+                <p class="last-precio">$000,00.-</p>
+                <p class="tres-cuotas">3 CUOTAS SIN INTERES</p>
+            </div>  
         </section>
 
     </main>
